@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="DSED -01 UI Based Simple Game" Height="600" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="367*"/>
+            <ColumnDefinition Width="426*"/>
+        </Grid.ColumnDefinitions>
         <!-- 
         https://stackoverflow.com/questions/9407286/is-there-a-way-to-have-a-background-image-behind-a-stack-panel-or-a-grid-on-silv -->
-        <Grid x:Name="GridSequence" HorizontalAlignment="Left" Height="477" Margin="394,72,0,0" VerticalAlignment="Top" Width="150">
+        <Grid x:Name="GridSequence" HorizontalAlignment="Left" Height="477" Margin="236,48,0,0" VerticalAlignment="Top" Width="150" Grid.ColumnSpan="2">
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/jug.png" />
             </Grid.Background>
@@ -28,7 +32,7 @@
                    Tag ="06" MouseDown="Image_Click"/>
 
         </Grid>
-        <Grid x:Name="GridRandom"  HorizontalAlignment="Left" Height="387" Margin="270,120,0,0" VerticalAlignment="Top" Width="396" Visibility="Hidden">
+        <Grid x:Name="GridRandom"  HorizontalAlignment="Left" Height="387" Margin="270,120,0,0" VerticalAlignment="Top" Width="396" Visibility="Hidden" Grid.ColumnSpan="2">
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/fish-bowl.png" />
             </Grid.Background>
@@ -46,14 +50,15 @@
                    MouseDown="Image_Click"/>
 
         </Grid>
-        <Button x:Name="btnSetNumberSequence" Content="Random Number" HorizontalAlignment="Left" Height="78" Margin="54,429,0,0" VerticalAlignment="Top" Width="216"
+        <Button x:Name="btnSetNumberSequence" Content="Random Number" HorizontalAlignment="Left" Height="78" Margin="40,447,0,0" VerticalAlignment="Top" Width="154"
                 Click="btnSetNumberSequence_Click" />
-        <Grid HorizontalAlignment="Left" Height="118" Margin="90,72,0,0" VerticalAlignment="Top" Width="154">
+        <Grid HorizontalAlignment="Left" Height="118" Margin="38,57,0,0" VerticalAlignment="Top" Width="154">
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/square.png" />
             </Grid.Background>
+            <Image x:Name="SelectedImage" HorizontalAlignment="Left" Height="100" Margin="26,8,0,0" VerticalAlignment="Top" Width="100"/>
+
         </Grid>
-        <Image x:Name="SelectedImage" HorizontalAlignment="Left" Height="80" Margin="126,90,0,0" VerticalAlignment="Top" Width="80"/>
 
     </Grid>
 </Window>
