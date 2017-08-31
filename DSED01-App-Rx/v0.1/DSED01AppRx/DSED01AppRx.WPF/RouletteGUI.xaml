@@ -8,18 +8,39 @@
         Title="DSED -01 UI Based Simple Game" 
         WindowStyle="None"
         Left="600" Top="100"
-        Height="600" Width="700" Background="Beige">
+        Height="600" Width="700" Background="Beige"
+        FontFamily="Segoe Print" FontSize="18">
 
-        <!-- https://stackoverflow.com/questions/1545258/changing-the-start-up-location-of-a-wpf-window -->
-    
-    <Grid Margin="0,0,2,0">
+    <!-- https://stackoverflow.com/questions/1545258/changing-the-start-up-location-of-a-wpf-window -->
+
+    <Grid Margin="0,0,0,0" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="367*"/>
             <ColumnDefinition Width="426*"/>
         </Grid.ColumnDefinitions>
+
+        <TextBlock Text="The Random Number" TextWrapping="Wrap" TextAlignment="Center"
+                   HorizontalAlignment="Left" Height="64" Margin="24,32,0,0" VerticalAlignment="Top" Width="131"/>
+        <TextBlock Text="The Selected Number" TextWrapping="Wrap" TextAlignment="Center"
+            HorizontalAlignment="Left" Height="64" Margin="172,32,0,0" VerticalAlignment="Top" Width="131"/>
+
+        <Grid HorizontalAlignment="Left" Height="92" Margin="188,103,0,0" VerticalAlignment="Top" Width="100">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/square.png" />
+            </Grid.Background>
+            <Image x:Name="SelectedImage" HorizontalAlignment="Left" Height="80" Margin="10,6,0,0" VerticalAlignment="Top" Width="80"/>
+        </Grid>
+        
+        <Grid HorizontalAlignment="Left" Height="92" Margin="38,103,0,0" VerticalAlignment="Top" Width="100">
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/square.png" />
+            </Grid.Background>
+            <Image HorizontalAlignment="Left" Height="80" Margin="10,6,0,0" VerticalAlignment="Top" Width="80"/>
+        </Grid>
+
         <!-- 
         https://stackoverflow.com/questions/9407286/is-there-a-way-to-have-a-background-image-behind-a-stack-panel-or-a-grid-on-silv -->
-        <Grid x:Name="GridSequence" HorizontalAlignment="Left" Height="477" Margin="43,48,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1">
+        <Grid x:Name="GridSequence" HorizontalAlignment="Left" Height="477" Margin="69,78,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1">
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/jug.png" />
             </Grid.Background>
@@ -38,7 +59,7 @@
                    Tag ="06" MouseDown="Image_Click"/>
 
         </Grid>
-        <Grid x:Name="GridRandom"  HorizontalAlignment="Left" Height="387" Margin="270,120,0,0" VerticalAlignment="Top" Width="396" Visibility="Hidden" Grid.ColumnSpan="2">
+        <Grid x:Name="GridRandom"  HorizontalAlignment="Left" Height="387" Margin="272,172,0,0" VerticalAlignment="Top" Width="396"  Grid.ColumnSpan="2" Visibility="Hidden">
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/fish-bowl.png" />
             </Grid.Background>
@@ -56,17 +77,10 @@
                    MouseDown="Image_Click"/>
 
         </Grid>
-        <Button x:Name="btnSetNumberSequence" HorizontalAlignment="Left" Height="78" Margin="40,447,0,0" VerticalAlignment="Top" Width="225"
-                Click="btnSetNumberSequence_Click" FontFamily="Segoe Print" FontSize="18" >
-            <TextBlock x:Name="buttonText" Text="This is a test 1 2 3 4 5 6 7 8 9 10"  TextWrapping="Wrap"/>
+        <Button x:Name="btnSetNumberSequence" HorizontalAlignment="Left" Height="78" Margin="78,477,0,0" VerticalAlignment="Top" Width="179"
+                Click="btnSetNumberSequence_Click"  >
+            <TextBlock x:Name="buttonText" Text="This is a test 1 2 3 4 5 6 7 8 9 10"  TextWrapping="Wrap" Width="163" TextAlignment="Center"/>
         </Button>
-        <Grid HorizontalAlignment="Left" Height="118" Margin="38,57,0,0" VerticalAlignment="Top" Width="154">
-            <Grid.Background>
-                <ImageBrush ImageSource="Resources/square.png" />
-            </Grid.Background>
-            <Image x:Name="SelectedImage" HorizontalAlignment="Left" Height="100" Margin="26,8,0,0" VerticalAlignment="Top" Width="100"/>
-
-        </Grid>
 
     </Grid>
 </Window>
