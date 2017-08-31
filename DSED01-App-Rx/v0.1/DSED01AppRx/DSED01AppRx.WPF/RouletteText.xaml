@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DSED01AppRx.WPF"
         mc:Ignorable="d"
-        Title="A Veriation of Russian Roulette Game" Height="600" Width="500"
-        WindowStyle="None">
+        Title="A Veriation of Russian Roulette Game" Height="682" Width="500"
+        WindowStyle="None" FontSize="20" FontFamily="Segoe Print">
     <Grid Margin="0,0,0,0.4" HorizontalAlignment="Left" Width="500">
         <Grid Height="158" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="495">
-            <Border BorderBrush="Black" BorderThickness="1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="482" Margin="7,0,0,11"/>
+            <Border BorderBrush="Black" BorderThickness="1" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Width="482" Margin="7,4,0,7"/>
             <Label Content="Set the rules of the Roulette Game:" HorizontalAlignment="Left" Height="42" Margin="12,5,0,0" VerticalAlignment="Top" Width="377" FontSize="20" FontFamily="Segoe Print"
                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <!-- https://stackoverflow.com/questions/5315497/how-to-center-a-label-text-in-wpf  -->
@@ -20,18 +20,25 @@
             <Label Content="You have 2 chances." HorizontalAlignment="Left" Height="41" Margin="6,106,0,0" VerticalAlignment="Top" Width="407" FontSize="20"
                 HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Segoe Print"/>
         </Grid>
-        <Grid HorizontalAlignment="Left" Height="415" Margin="10,168,0,0" VerticalAlignment="Top" Width="480">
-            <Label Content="1. Randomize a number. (1 to 6)" HorizontalAlignment="Left" Height="38" Margin="1,-6,0,0" VerticalAlignment="Top" Width="367" FontFamily="Segoe Print" FontSize="20"/>
-            <Label Content="2. Get the next number." HorizontalAlignment="Left" Height="38" Margin="1,26,0,0" VerticalAlignment="Top" Width="367" FontFamily="Segoe Print" FontSize="20"/>
-            <Label Content="3. Make your choice : " HorizontalAlignment="Left" Height="44" Margin="4,56,0,0" VerticalAlignment="Top" Width="227" FontFamily="Segoe Print" FontSize="20"/>
-            <Label Content="3.1 Dicard this number." HorizontalAlignment="Left" Height="40" Margin="30,84,0,0" VerticalAlignment="Top" Width="253" FontFamily="Segoe Print" FontSize="20"/>
-            <Label Content="3.2 Pick this number." HorizontalAlignment="Left" Height="40" Margin="30,111,0,0" VerticalAlignment="Top" Width="253" FontFamily="Segoe Print" FontSize="20"/>
-            <TextBlock HorizontalAlignment="Left" Margin="20,50,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Segoe Print" FontSize="20" Width="393">
+        <Grid HorizontalAlignment="Left" Height="498" Margin="10,168,0,0" VerticalAlignment="Top" Width="480">
+            <Label Content="1. Randomize a number. (1 to 6)" HorizontalAlignment="Left" Height="38" Margin="1,-7,0,0" VerticalAlignment="Top" Width="367" FontFamily="Segoe Print" FontSize="20"/>
+            <Label Content="2. Get the next number." HorizontalAlignment="Left" Height="38" Margin="0,24,0,0" VerticalAlignment="Top" Width="367" FontFamily="Segoe Print" FontSize="20"/>
+            <Label Content="3. Make your choice : " HorizontalAlignment="Left" Height="44" Margin="0,53,0,0" VerticalAlignment="Top" Width="227" FontFamily="Segoe Print" FontSize="20"/>
+            <Label Content="3.1 Dicard this number." HorizontalAlignment="Left" Height="40" Margin="24,82,0,0" VerticalAlignment="Top" Width="253" FontFamily="Segoe Print" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Height="73" Margin="69,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="371">
+                3.1.1 If the discarded number is random number => Your lose.
+            </TextBlock>            
+            <Label Content="3.2 Pick this number." HorizontalAlignment="Left" Height="40" Margin="20,188,0,0" VerticalAlignment="Top" Width="253" FontFamily="Segoe Print" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="69,233,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Segoe Print" FontSize="20" Width="393">
                 3.2.1 If this number match the random number => You win.
             </TextBlock>
-            <TextBlock HorizontalAlignment="Left" Margin="10,24,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" FontFamily="Segoe Print" FontSize="20" Width="393">
-                3.2.2 If this number does match the random number.
+            <TextBlock HorizontalAlignment="Left" Margin="69,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe Print" FontSize="20" Width="393" Height="96">
+                3.2.2 If this number does not match the random number. Reduce chances by 1.
             </TextBlock>
+            <TextBlock HorizontalAlignment="Left" Height="76" Margin="69,421,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="371">
+                3.2.2.1 If chance is reduced to zero => You lose.
+            </TextBlock>
+
             <!--Label Content="3.2.1 This number match with the random number." HorizontalAlignment="Left" Height="40" Margin="71,138,0,0" VerticalAlignment="Top" Width="381" FontFamily="Segoe Print" FontSize="20"/-->
         </Grid>
 
