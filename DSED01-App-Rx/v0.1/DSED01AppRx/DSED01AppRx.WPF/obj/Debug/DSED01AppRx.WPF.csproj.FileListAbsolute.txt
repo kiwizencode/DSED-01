@@ -1,0 +1,17 @@
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\bin\Debug\DSED01AppRx.WPF.exe.config
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\bin\Debug\DSED01AppRx.WPF.exe
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\bin\Debug\DSED01AppRx.WPF.pdb
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF.csprojResolveAssemblyReference.cache
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\MainWindow.g.cs
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\App.g.cs
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF_MarkupCompile.cache
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF_MarkupCompile.lref
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\MainWindow.baml
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF.g.resources
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF.Properties.Resources.resources
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF.csproj.GenerateResource.Cache
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF.csproj.CoreCompileInputs.cache
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF.exe
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\DSED01AppRx.WPF.pdb
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\RouletteGameTest.g.cs
+C:\Users\kiwizen\Desktop\DSED01-App-Rx\v0.1\DSED01AppRx\DSED01AppRx.WPF\obj\Debug\RouletteGameTest.baml
