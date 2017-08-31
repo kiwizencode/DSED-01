@@ -17,9 +17,9 @@ namespace DSED01AppRx.WPF
     /// <summary>
     /// Interaction logic for TestScreen.xaml
     /// </summary>
-    public partial class RouletteGame : Window
+    public partial class RouletteText : Window
     {
-        public RouletteGame()
+        public RouletteText()
         {
             InitializeComponent();
         }

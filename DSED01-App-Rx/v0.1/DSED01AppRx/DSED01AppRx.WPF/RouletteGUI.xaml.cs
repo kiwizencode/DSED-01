@@ -18,20 +18,32 @@ namespace DSED01AppRx.WPF
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RouletteGUI : Window
     {
-        public MainWindow()
+        const string random_string = "Random";
+        const string sequence_string = "Sequence";
+        int count = 0;
+
+        public RouletteGUI()
         {
             InitializeComponent();
+
+
+            SetButtonText(buttonText, random_string);
+
         }
-        const string random_string = "Random Number";
-        const string sequence_string = "Sequence Number";
-        int count = 0;
+
+        private void SetButtonText(TextBlock textBlock, string text)
+        {
+            textBlock.Text = "Switch to " + text + " Number";
+            textBlock.Tag = text;
+        }
+
         private void btnSetNumberSequence_Click(object sender, RoutedEventArgs e)
         {
 
 
-            string text = (btnSetNumberSequence.Content.ToString() == random_string) ?
+            string text = (buttonText.Tag.ToString() == random_string) ?
                             sequence_string : random_string;
 
 
@@ -55,10 +67,6 @@ namespace DSED01AppRx.WPF
                     break;
             }
 
-
-
-
-
             void SetGridVisibility(Grid selected_grid)
             {
                 Visibility set_visible = (selected_grid.Visibility == Visibility.Hidden )?                                      Visibility.Visible : Visibility.Hidden;
@@ -69,7 +77,8 @@ namespace DSED01AppRx.WPF
             SetGridVisibility(GridRandom);
             SetGridVisibility(GridSequence);
 
-            btnSetNumberSequence.Content = text;
+            SetButtonText(buttonText, text);
+            
             SelectedImage.Source = null;
             count = 0;
         }

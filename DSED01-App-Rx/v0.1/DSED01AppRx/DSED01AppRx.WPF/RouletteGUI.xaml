@@ -1,19 +1,25 @@
-﻿<Window x:Class="DSED01AppRx.WPF.MainWindow"
+﻿<Window x:Class="DSED01AppRx.WPF.RouletteGUI"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DSED01AppRx.WPF"
         mc:Ignorable="d"
-        Title="DSED -01 UI Based Simple Game" Height="600" Width="800">
-    <Grid>
+        Title="DSED -01 UI Based Simple Game" 
+        WindowStyle="None"
+        Left="600" Top="100"
+        Height="600" Width="700" Background="Beige">
+
+        <!-- https://stackoverflow.com/questions/1545258/changing-the-start-up-location-of-a-wpf-window -->
+    
+    <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="367*"/>
             <ColumnDefinition Width="426*"/>
         </Grid.ColumnDefinitions>
         <!-- 
         https://stackoverflow.com/questions/9407286/is-there-a-way-to-have-a-background-image-behind-a-stack-panel-or-a-grid-on-silv -->
-        <Grid x:Name="GridSequence" HorizontalAlignment="Left" Height="477" Margin="236,48,0,0" VerticalAlignment="Top" Width="150" Grid.ColumnSpan="2">
+        <Grid x:Name="GridSequence" HorizontalAlignment="Left" Height="477" Margin="43,48,0,0" VerticalAlignment="Top" Width="150" Grid.Column="1">
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/jug.png" />
             </Grid.Background>
@@ -50,8 +56,10 @@
                    MouseDown="Image_Click"/>
 
         </Grid>
-        <Button x:Name="btnSetNumberSequence" Content="Random Number" HorizontalAlignment="Left" Height="78" Margin="40,447,0,0" VerticalAlignment="Top" Width="154"
-                Click="btnSetNumberSequence_Click" />
+        <Button x:Name="btnSetNumberSequence" HorizontalAlignment="Left" Height="78" Margin="40,447,0,0" VerticalAlignment="Top" Width="225"
+                Click="btnSetNumberSequence_Click" FontFamily="Segoe Print" FontSize="18" >
+            <TextBlock x:Name="buttonText" Text="This is a test 1 2 3 4 5 6 7 8 9 10"  TextWrapping="Wrap"/>
+        </Button>
         <Grid HorizontalAlignment="Left" Height="118" Margin="38,57,0,0" VerticalAlignment="Top" Width="154">
             <Grid.Background>
                 <ImageBrush ImageSource="Resources/square.png" />
